@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkeo de stylesheets y favicon -->
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/mini.css">
+    <link rel="stylesheet" href="../stylesheets/desktop.css">
+    <link rel="icon" href="../img/branding/isotype.svg">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/fadc21d84a.js" crossorigin="anonymous"></script>
+    <title>FunkoShop !</title>
+</head>
+<body>
+    <header>
+        <div class="envoltorioNav">
+            <div class="logoNav">
+                <a href='./shop.html' class="logoNavMobile"><img src="../img/branding/isotype.svg" ></a>
+                <a href="./shop.html" class="logoNavDesktop"><img src="../img/branding/logo_light_horizontal.svg" ></a>
+            </div>
+            
+            <nav>
+                <button class="openMenu"><img src="../img/icons/menu.png" alt=""></button>
+                <ul class="navLinksUL inactive menuAbierto">
+
+                    <button class="closeMenu"><img src="../img/icons/close-icon.svg" alt=""></button>
+                    <li><a href="../index.html">Inicio</li></a>
+                    <li><a href="./contact.html">Contacto</li></a>
+                    <li><a href="./login.html">Login</li></a>
+                    <a class="iconoCart" href="./cart.html"><img src="../img/icons/cart-icon.svg" alt=""></a>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <div class="contenedorPrincipal">
+        <nav class="filtroDeBusqueda">
+            <div class="productosContainer">
+                <div class="search">
+                    <p class="searchTexto">
+                        ENCONTRA LO QUE NECESITAS:
+                    </p>
+                    <input class="inputSearch" type="search" placeholder="item o categoria">
+                    <button class="buttonSearch" type="submit">BUSCAR</button>
+                    <p class="noResults"></p>
+                    <p class="order">ORDENAR POR</p>
+                    <select name="ordenar" id="ordenarPor">
+                        <option value="none">-</option>
+                        <option value="none">Mayor a Menor</option>
+                        <option value="none">Menor a Mayor</option>
+                    </select>
+                    <div class="priceContainer">
+                        <div class="priceText">
+                            <p class="price">PRECIO</p>
+                        </div>
+                        <div class="minMaxInputs">
+                            <p class="minimo">MIN 
+                                <input type="text" placeholder="0">
+                            </p>
+                            <p class="maximo">MAX
+                                <input type="text" placeholder="0">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <p>FILTRAR</p>
+                        <label><input type="checkbox">NUEVOS</label>
+                        <label><input type="checkbox">OFERTAS</label>
+                        <label><input type="checkbox">EDICION ESPECIAL</label>
+                        <label><input type="checkbox">FAVORITOS</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+            <section class="mainContainer">
+                <div class="slideshow-container">
+                    <div class="mySlides fade starwars">
+                        <div class="caracteristica">
+                            <span>NUEVO</span>
+                        </div>
+                        <div class="numbertext">1 / 3</div>
+                        <a class="imgTrooper" href="./cart.html?items=1"></a>
+                        <div class="textoLanzamientosCarta descriptionTrooperContainer">
+                            <h4 class="trooperTagClass"></h4>
+                            <h3 class="trooperNameClass"></h3>
+                            <p class="trooperPriceClass"></p>
+                            <p class="trooperCuotasClass"></p>
+                        </div>
+                    </div>
+                
+                    <div class="mySlides fade pokemon">
+                        <div class="caracteristica">
+                            <span>NUEVO</span>
+                        </div>
+                        <div class="numbertext">2 / 3</div>
+                        <a class="imgPokemon" href="./cart.html?items=2"></a>
+                        <div class="textoLanzamientosCarta descriptionPokemonContainer ">
+                            <h4 class="pokemonTagClass"></h4>
+                            <h3 class="pokemonNameClass"></h3>
+                            <p class="pokemonPriceClass"></p>
+                            <p class="pokemonCuotasClass"></p>
+                        </div>
+                    </div>
+                
+                    <div class="mySlides fade harrypotter">
+                        <div class="caracteristica">
+                            <span>NUEVO</span>
+                        </div>
+                        <div class="numbertext">3 / 3</div>
+                        <a class="imgHP" href="./cart.html?items=3"></a>
+                        <div class="textoLanzamientosCarta descriptionHarryPotterContainer">
+                        </div>
+                    </div>
+
+                     
+                
+                    <a class="prev flechaIzq" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next flechaDer" onclick="plusSlides(1)">&#10095;</a>
+                    
+                
+                </div>
+                <br>
+                
+                <div class="botonesSlider" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+                
+            </section>
+            
+        </main>
+    </div>
+
+    <footer>
+        <nav class="navFooter">
+            <div class="navLinksFooter">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./login.html">REGISTRARSE</a></li>
+                    <li><a href="./login.html">INGRESAR</a></li>
+                    <li><a href="./contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="logoFooter">
+                <img src="../img/branding/isotype.svg" alt="">
+            </div>
+        </nav>
+        <p>All Rights reserved 2023 - Federico Tempone &copy;</p>
+    </footer>
+
+<!-- linkeo de js -->
+<script src="../src/navBar.js"></script>
+<script src="../src/slider.js"></script>
+<script src="../src/shop.js"></script>
+
+
+</body>
+</html>
