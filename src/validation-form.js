@@ -41,6 +41,7 @@ form.addEventListener("submit", e=> { //al presionar el boton enviar se dispara 
       entrar = true; 
       parrafoMensaje.innerHTML = alertas; 
     }
+    console.log(alertas);
 
     if (!entrar){ //si entrar es distinta a true entonces ejecuta la funcion, ya que si entrar fuese True estaría entrando en los if, y no deberia ejecutarse la opcion de validacion
       validado(); //llamada a la funcion validado
